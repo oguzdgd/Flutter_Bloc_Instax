@@ -12,6 +12,7 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   #Firebase
+  equatable: ^2.0.5
 
 
 dev_dependencies:
