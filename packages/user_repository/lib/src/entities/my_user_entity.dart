@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:equatable/equatable.dart';
 
 class MyUserEntity extends Equatable {
@@ -19,6 +21,15 @@ class MyUserEntity extends Equatable {
       'name': name,
       'picture': picture,
     };
+  }
+
+  static MyUserEntity fromDocument(Map<String, dynamic> doc) {
+    return MyUserEntity(
+        id: doc['id'] as String,
+        email: doc['email'] as String,
+        name: doc['name'] as String,
+        picture: doc['picture'] as String?
+        );
   }
 
   String toString() {

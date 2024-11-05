@@ -15,6 +15,7 @@ dependencies:
   
    #Firebase
   firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
 
 
 dev_dependencies:
